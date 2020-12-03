@@ -32,7 +32,6 @@ export const useTracking = (trackingData: TrackingData, options = defaultOptions
 
         customDispatch(data);
       } catch (err) {
-        // eslint-disable-next-line no-console
         console.error(err);
       }
     },

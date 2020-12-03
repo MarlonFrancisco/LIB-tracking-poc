@@ -29,12 +29,6 @@ declare global {
   }
 }
 
-export type TrackingData = {
-  eventType: string;
-  context: DATALAYER_PAGES;
-  data: Datalayer;
-};
-
 export enum DATALAYER_PAGES {
   homepage,
   searchResult,
@@ -46,3 +40,9 @@ export enum DATALAYER_PAGES {
   comparator,
   adDeactivatedSold,
 }
+
+export type TrackingData = {
+  eventType: string;
+  context: DATALAYER_PAGES;
+  data: Datalayer;
+};

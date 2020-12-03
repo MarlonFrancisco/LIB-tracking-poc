@@ -1,8 +1,4 @@
-import { onClientSide } from "./index";
-
 export const DEFAULT_VALUES_LAYER = () => {
-  if (!onClientSide()) return {};
-
   const { href, search } = window.location;
   const urlParams = new URLSearchParams(search);
 
